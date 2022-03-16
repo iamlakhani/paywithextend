@@ -1,0 +1,42 @@
+application:
+  title: API Executions
+  version: 1.0.0
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+logging:
+  level:
+    root: INFO
+
+extend:
+  application:
+    name: InjectMapFromYAML
+    url: http://injectmapfromyaml.dev
+    description: How To Inject a map from a YAML File in Spring Boot
+  company:
+    name: Extend
+  candidate:
+    name: Imran Lakhani
+  credentials:
+    username: imlakhani@gmail.com
+    password: Imran@Extend2005
+  apis:
+    signin:
+      version: application/vnd.paywithextend.v2021-03-12+json
+      url: https://api.paywithextend.com/signin
+      method: POST
+    virtualcards:
+      version: application/vnd.paywithextend.v2021-03-12+json
+      url: https://api.paywithextend.com/virtualcards
+      method: GET
+    transactions:
+      version: application/vnd.paywithextend.v2021-03-12+json
+      url: https://api.paywithextend.com/virtualcards/{id}/transactions?status=CLEARED
+      method: GET
+    transaction:
+      version: application/vnd.paywithextend.v2021-03-12+json
+      url: https://api.paywithextend.com/transactions/{id}
+      method: GET
