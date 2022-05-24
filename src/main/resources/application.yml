@@ -21,8 +21,8 @@ extend:
   candidate:
     name: Imran Lakhani
   credentials:
-    username: imlakhani@gmail.com
-    password: Imran@Extend2005
+    username: someone@gmail.com
+    password: somepassword
   apis:
     signin:
       version: application/vnd.paywithextend.v2021-03-12+json
